@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Content</title>
+    <style>
+        .container{
+            height: 400px;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid;
+        }
+        .item{
+            background-color: brown;
+            padding: 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            border: 1px solid;
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flax-start{
+            align-content: flex-start;
+        }
+        .flax-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">dipisicing elit. Necessitatibus corrupti </div>
+        <div class="item">ecessitatibus corrupti sint eius voluptatem</div>
+        <div class="item">r sit amet consectetur adipisicing elit. N suscipit cum, b</div>
+        <div class="item">, ea ab accusamus officiis similique laboriosam iusto repellat </div>
+        <div class="item">anditiismollitia veritatis cupiditate ipsa qui</div>
+        <div class="item">anditiismollitia veritatis </div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">dipisicing elit. Necessitatibus corrupti </div>
+        <div class="item">ecessitatibus corrupti sint eius voluptatem</div>
+        <div class="item">r sit amet consectetur adipisicing elit. N suscipit cum, b</div>
+        <div class="item">, ea ab accusamus officiis similique laboriosam iusto repellat </div>
+        <div class="item">anditiismollitia veritatis cupiditate ipsa qui</div>
+        <div class="item">anditiismollitia veritatis </div>
+    </div>
+
+    <p>flax-start</p>
+    <div class="container flax-start">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">dipisicing elit. Necessitatibus corrupti </div>
+        <div class="item">ecessitatibus corrupti sint eius voluptatem</div>
+        <div class="item">r sit amet consectetur adipisicing elit. N suscipit cum, b</div>
+        <div class="item">, ea ab accusamus officiis similique laboriosam iusto repellat </div>
+        <div class="item">anditiismollitia veritatis cupiditate ipsa qui</div>
+        <div class="item">anditiismollitia veritatis </div>
+    </div>
+
+    <p>flax-end</p>
+    <div class="container flax-end">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">dipisicing elit. Necessitatibus corrupti </div>
+        <div class="item">ecessitatibus corrupti sint eius voluptatem</div>
+        <div class="item">r sit amet consectetur adipisicing elit. N suscipit cum, b</div>
+        <div class="item">, ea ab accusamus officiis similique laboriosam iusto repellat </div>
+        <div class="item">anditiismollitia veritatis cupiditate ipsa qui</div>
+        <div class="item">anditiismollitia veritatis </div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">dipisicing elit. Necessitatibus corrupti </div>
+        <div class="item">ecessitatibus corrupti sint eius voluptatem</div>
+        <div class="item">r sit amet consectetur adipisicing elit. N suscipit cum, b</div>
+        <div class="item">, ea ab accusamus officiis similique laboriosam iusto repellat </div>
+        <div class="item">anditiismollitia veritatis cupiditate ipsa qui</div>
+        <div class="item">anditiismollitia veritatis </div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container space-between">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing</div>
+        <div class="item">dipisicing elit. Necessitatibus corrupti </div>
+        <div class="item">ecessitatibus corrupti sint eius voluptatem</div>
+        <div class="item">r sit amet consectetur adipisicing elit. N suscipit cum, b</div>
+        <div class="item">, ea ab accusamus officiis similique laboriosam iusto repellat </div>
+        <div class="item">anditiismollitia veritatis cupiditate ipsa qui</div>
+        <div class="item">anditiismollitia veritatis </div>
+    </div>
+
+</body>
+</html>
